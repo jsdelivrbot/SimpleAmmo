@@ -1,0 +1,11 @@
+<Defs>
+
+    <JobDef>
+        <defName>ReloadHeldWeapons</defName>
+        <driverClass>SimpleAmmo.JobDriver_ReloadHeldWeapons</driverClass>
+        <reportString>reloading TargetA.</reportString>
+        <alwaysShowWeapon>true</alwaysShowWeapon>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+</Defs>

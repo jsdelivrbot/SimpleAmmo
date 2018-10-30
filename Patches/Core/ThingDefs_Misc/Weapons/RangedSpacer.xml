@@ -1,0 +1,60 @@
+<Patch>
+
+    <!-- Charge Rifle -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_ChargeRifle"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_ChargeRifle"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_ChargeRifle"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_HexCellSmall</ammoDef>
+                <magazineCapacity>30</magazineCapacity>
+                <ammoMultiplier>30</ammoMultiplier>
+                <reloadTime>4</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Charge Lance -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_ChargeLance"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_ChargeLance"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_ChargeLance"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_HexCellSmall</ammoDef>
+                <magazineCapacity>6</magazineCapacity>
+                <reloadOneAtATime>true</reloadOneAtATime>
+                <ammoMultiplier>6</ammoMultiplier>
+                <reloadTime>3</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

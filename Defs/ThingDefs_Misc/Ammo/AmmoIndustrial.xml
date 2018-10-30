@@ -1,0 +1,364 @@
+<Defs>
+
+    <!-- ========== Small Pistol Bullets ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoIndustrial">
+        <defName>Ammo_BulletPistolSmall</defName>
+        <label>small pistol bullet</label>
+        <labelShort>bullet</labelShort>
+        <labelPlural>small pistol bullets</labelPlural>
+        <description>A low-caliber pistol round, abstracted from rounds such as .22LR and 9x19mm parabellum. Used by smaller firearms such as the autopistol and machine pistol.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.11</MarketValue>
+            <Mass>0.01</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeIndustrial">
+        <defName>Make_Ammo_BulletPistolSmall</defName>
+        <label>make small pistol bullets (x250)</label>
+        <description>Make 250 small pistol bullets.</description>
+        <jobString>Making small pistol bullets.</jobString>
+        <targetCountAdjustment>250</targetCountAdjustment>
+        <workAmount>2200</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_BulletPistolSmall>250</Ammo_BulletPistolSmall>
+        </products>
+    </RecipeDef>
+
+    <!-- ========== Medium Pistol Bullets ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoIndustrial">
+        <defName>Ammo_BulletPistolMedium</defName>
+        <label>medium pistol bullet</label>
+        <labelShort>bullet</labelShort>
+        <labelPlural>medium pistol bullets</labelPlural>
+        <description>A medium-caliber pistol round, abstracted from rounds such as .45 ACP and .44 magnum. Used by firearms such as the revolver and heavy SMG.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.14</MarketValue>
+            <Mass>0.02</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeIndustrial">
+        <defName>Make_Ammo_BulletPistolMedium</defName>
+        <label>make medium pistol bullets (x250)</label>
+        <description>Make 250 medium pistol bullets.</description>
+        <jobString>Making medium pistol bullets.</jobString>
+        <targetCountAdjustment>250</targetCountAdjustment>
+        <workAmount>2900</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>13</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_BulletPistolMedium>250</Ammo_BulletPistolMedium>
+        </products>
+    </RecipeDef>
+
+    <!-- ========== Large Pistol Bullets ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoIndustrial">
+        <defName>Ammo_BulletPistolLarge</defName>
+        <label>large pistol bullet</label>
+        <labelShort>bullet</labelShort>
+        <labelPlural>large pistol bullets</labelPlural>
+        <description>A high-caliber pistol round, abstracted from rounds such as .50 AE.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.19</MarketValue>
+            <Mass>0.033</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeIndustrial">
+        <defName>Make_Ammo_BulletPistolLarge</defName>
+        <label>make large pistol bullets (x250)</label>
+        <description>Make 250 large pistol bullets.</description>
+        <jobString>Making large pistol bullets.</jobString>
+        <targetCountAdjustment>250</targetCountAdjustment>
+        <workAmount>3700</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>18</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_BulletPistolLarge>250</Ammo_BulletPistolLarge>
+        </products>
+    </RecipeDef>
+
+    <!-- ========== Small Rifle Bullet ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoIndustrial">
+        <defName>Ammo_BulletRifleSmall</defName>
+        <label>small rifle bullet</label>
+        <labelShort>bullet</labelShort>
+        <labelPlural>small rifle bullets</labelPlural>
+        <description>A lower-caliber rifle round, abstracted from intermediate cartridges such as 5.56x45mm. Used by firearms such as the assault rifle.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.14</MarketValue>
+            <Mass>0.012</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeIndustrial">
+        <defName>Make_Ammo_BulletRifleSmall</defName>
+        <label>make small rifle bullets (x250)</label>
+        <description>Make 250 small rifle bullets.</description>
+        <jobString>Making small rifle bullets.</jobString>
+        <targetCountAdjustment>250</targetCountAdjustment>
+        <workAmount>3000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>13</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_BulletRifleSmall>250</Ammo_BulletRifleSmall>
+        </products>
+    </RecipeDef>
+
+    <!-- ========== Medium Rifle Bullet ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoIndustrial">
+        <defName>Ammo_BulletRifleMedium</defName>
+        <label>medium rifle bullet</label>
+        <labelShort>bullet</labelShort>
+        <labelPlural>medium rifle bullets</labelPlural>
+        <description>A medium-caliber rifle round, abstracted from full-power cartridges such as 7.62x51mm and .303. Used by firearms such as the sniper rifle and bolt-action rifle.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.19</MarketValue>
+            <Mass>0.025</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeIndustrial">
+        <defName>Make_Ammo_BulletRifleMedium</defName>
+        <label>make medium rifle bullets (x250)</label>
+        <description>Make 250 medium rifle bullets.</description>
+        <jobString>Making medium rifle bullets.</jobString>
+        <targetCountAdjustment>250</targetCountAdjustment>
+        <workAmount>3900</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>18</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_BulletRifleMedium>250</Ammo_BulletRifleMedium>
+        </products>
+    </RecipeDef>
+
+    <!-- ========== Large Rifle Bullet ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoIndustrial">
+        <defName>Ammo_BulletRifleLarge</defName>
+        <label>large rifle bullet</label>
+        <labelShort>bullet</labelShort>
+        <labelPlural>large rifle bullets</labelPlural>
+        <description>A high-caliber rifle round, abstracted from high-caliber rounds such as .50 BMG.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.57</MarketValue>
+            <Mass>0.07</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeIndustrial">
+        <defName>Make_Ammo_BulletRifleLarge</defName>
+        <label>make large rifle bullets (x250)</label>
+        <description>Make 250 large rifle bullets.</description>
+        <jobString>Making large rifle bullets.</jobString>
+        <targetCountAdjustment>250</targetCountAdjustment>
+        <workAmount>5100</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_BulletRifleLarge>250</Ammo_BulletRifleLarge>
+        </products>
+    </RecipeDef>
+
+    <!-- ========== Shotgun Shells ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoIndustrial">
+        <defName>Ammo_ShotgunShell</defName>
+        <label>shotgun shell</label>
+        <labelShort>shell</labelShort>
+        <labelPlural>shotgun shells</labelPlural>
+        <description>A shotgun shell, abstracted from 12-gauge. Used by shotguns such as the pump shotgun and chain shotgun.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.27</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeIndustrial">
+        <defName>Make_Ammo_ShotgunShell</defName>
+        <label>make shotgun shells (x100)</label>
+        <description>Make 100 shotgun shells.</description>
+        <jobString>Making shotgun shells.</jobString>
+        <targetCountAdjustment>100</targetCountAdjustment>
+        <workAmount>2200</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_ShotgunShell>100</Ammo_ShotgunShell>
+        </products>
+    </RecipeDef>
+
+    <!-- ========== Shotgun Shells ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoIndustrial">
+        <defName>Ammo_CellIncendiaryMedium</defName>
+        <label>medium incendiary cell</label>
+        <labelShort>cell</labelShort>
+        <labelPlural>medium incendiary cells</labelPlural>
+        <description>A fuel cell containing highly-flammable chemicals. Used in weapons like the incendiary launcher.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.62</MarketValue>
+            <Mass>0.1</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeIndustrial">
+        <defName>Make_Ammo_CellIncendiaryMedium</defName>
+        <label>make medium incendiary cells (x75)</label>
+        <description>Make 75 medium incendiary cells.</description>
+        <jobString>Making medium incendiary cells.</jobString>
+        <targetCountAdjustment>75</targetCountAdjustment>
+        <workAmount>2200</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>13</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_ShotgunShell>75</Ammo_ShotgunShell>
+        </products>
+    </RecipeDef>
+
+</Defs>

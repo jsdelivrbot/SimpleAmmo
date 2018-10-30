@@ -1,0 +1,86 @@
+<Defs>
+
+    <SimpleAmmo.AmmoDef Name="BaseAmmo" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>200</stackLimit>
+        <alwaysHaulable>true</alwaysHaulable>
+        <tickerType>Never</tickerType>
+        <useHitPoints>true</useHitPoints>
+        <pathCost>15</pathCost>
+        <selectable>true</selectable>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>-3</Beauty>
+            <SellPriceFactor>0.20</SellPriceFactor>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+    </SimpleAmmo.AmmoDef>
+
+    <SimpleAmmo.AmmoDef Name="BaseAmmoNeolithic" ParentName="BaseAmmo" Abstract="True">
+        <thingCategories>
+            <li>AmmoNeolithic</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>4</DeteriorationRate>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <SimpleAmmo.AmmoDef Name="BaseAmmoIndustrial" ParentName="BaseAmmo" Abstract="True">
+        <thingCategories>
+            <li>AmmoIndustrial</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>0.7</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <SimpleAmmo.AmmoDef Name="BaseAmmoSpacer" ParentName="BaseAmmo" Abstract="True">
+        <thingCategories>
+            <li>AmmoSpacer</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>0.7</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <!-- Recipes -->
+    <RecipeDef Name="BaseAmmoRecipe" Abstract="True">
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+    </RecipeDef>
+
+    <RecipeDef Name="BaseAmmoRecipeNeolithic" ParentName="BaseAmmoRecipe" Abstract="True">
+        <effectWorking>Smelt</effectWorking>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef Name="BaseAmmoRecipeIndustrial" ParentName="BaseAmmoRecipe" Abstract="True">
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>TableMachining</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef Name="BaseAmmoRecipeSpacer" ParentName="BaseAmmoRecipe" Abstract="True">
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+</Defs>

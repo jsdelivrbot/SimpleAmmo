@@ -1,0 +1,87 @@
+<Patch>
+
+    <!-- Short Bow -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Bow_Short"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Bow_Short"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bow_Short"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_Arrow</ammoDef>
+                <magazineCapacity>1</magazineCapacity>
+                <reloadTime>0.8</reloadTime>
+                <throwReloadingMote>false</throwReloadingMote>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Recurve Bow -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Bow_Recurve"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Bow_Recurve"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bow_Recurve"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_Arrow</ammoDef>
+                <magazineCapacity>1</magazineCapacity>
+                <reloadTime>0.8</reloadTime>
+                <throwReloadingMote>false</throwReloadingMote>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Greatbow -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Bow_Great"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Bow_Great"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bow_Great"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_ArrowHeavy</ammoDef>
+                <magazineCapacity>1</magazineCapacity>
+                <reloadTime>1.0</reloadTime>
+                <throwReloadingMote>false</throwReloadingMote>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

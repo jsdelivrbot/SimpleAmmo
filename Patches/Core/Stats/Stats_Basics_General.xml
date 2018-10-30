@@ -1,0 +1,10 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/StatDef[defName="Mass"]/parts</xpath>
+        <value>
+            <li Class="SimpleAmmo.StatPart_FromHeldAmmo"/>
+        </value>
+    </Operation>
+
+</Patch>

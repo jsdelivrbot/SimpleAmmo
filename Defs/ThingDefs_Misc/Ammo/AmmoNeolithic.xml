@@ -1,0 +1,103 @@
+<Defs>
+
+    <!-- ========== Arrows ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoNeolithic">
+        <defName>Ammo_Arrow</defName>
+        <label>arrow</label>
+        <labelPlural>arrows</labelPlural>
+        <description>A simple wooden arrow with an improvised stone head, suitable for use by smaller bows.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.6</MarketValue>
+            <Mass>0.04</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeNeolithic">
+        <defName>Make_Ammo_Arrow</defName>
+        <label>make arrows (x10)</label>
+        <description>Make 10 arrows.</description>
+        <jobString>Making arrows.</jobString>
+        <targetCountAdjustment>10</targetCountAdjustment>
+        <workAmount>1000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WoodLog</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_Arrow>10</Ammo_Arrow>
+        </products>
+    </RecipeDef>
+
+    <!-- ========== Heavy Arrows ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoNeolithic">
+        <defName>Ammo_ArrowHeavy</defName>
+        <label>heavy arrow</label>
+        <labelShort>arrow</labelShort>
+        <labelPlural>heavy arrows</labelPlural>
+        <description>A large wooden arrow with a steel head, designed to be fired from powerful bows such as the greatbow.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.2</MarketValue>
+            <Mass>0.075</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeNeolithic">
+        <defName>Make_Ammo_ArrowHeavy</defName>
+        <label>make heavy arrows (x10)</label>
+        <description>Make 10 heavy arrows.</description>
+        <jobString>Making heavy arrows.</jobString>
+        <targetCountAdjustment>10</targetCountAdjustment>
+        <recipeUsers Inherit="False">
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+        </recipeUsers>
+        <workAmount>1800</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WoodLog</li>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_ArrowHeavy>10</Ammo_ArrowHeavy>
+        </products>
+    </RecipeDef>
+
+</Defs>

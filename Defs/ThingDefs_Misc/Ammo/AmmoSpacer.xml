@@ -1,0 +1,162 @@
+<Defs>
+
+    <!-- ========== Tiny Hex-Cells ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoSpacer">
+        <defName>Ammo_HexCellTiny</defName>
+        <label>tiny hex-cell</label>
+        <labelShort>hex-cell</labelShort>
+        <labelPlural>tiny hex-cells</labelPlural>
+        <description>A highly-advanced form of energy storage. This particular hex-cell variant is very small, being less than 2 inches in diameter.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.44</MarketValue>
+            <Mass>0.1</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeSpacer">
+        <defName>Make_Ammo_HexCellTiny</defName>
+        <label>make tiny hex-cells (x20)</label>
+        <description>Make 20 tiny hex-cells.</description>
+        <jobString>Making tiny hex-cells.</jobString>
+        <targetCountAdjustment>20</targetCountAdjustment>
+        <workAmount>2500</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_HexCellTiny>20</Ammo_HexCellTiny>
+        </products>
+    </RecipeDef>
+
+    <!-- ========== Small Hex-Cells ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoSpacer">
+        <defName>Ammo_HexCellSmall</defName>
+        <label>small hex-cell</label>
+        <labelShort>hex-cell</labelShort>
+        <labelPlural>small hex-cells</labelPlural>
+        <description>A highly-advanced form of energy storage. This particular hex-cell variant is about 3.5 inches in diameter, and is used in weapons like the charge rifle.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>6.5</MarketValue>
+            <Mass>0.35</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeSpacer">
+        <defName>Make_Ammo_HexCellSmall</defName>
+        <label>make small hex-cells (x10)</label>
+        <description>Make 10 small hex-cells.</description>
+        <jobString>Making small hex-cells.</jobString>
+        <targetCountAdjustment>10</targetCountAdjustment>
+        <workAmount>2500</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>16</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_HexCellSmall>10</Ammo_HexCellSmall>
+        </products>
+    </RecipeDef>
+
+    <!-- ========== Medium Hex-Cells ========== -->
+    <SimpleAmmo.AmmoDef ParentName="BaseAmmoSpacer">
+        <defName>Ammo_HexCellMedium</defName>
+        <label>medium hex-cell</label>
+        <labelShort>hex-cell</labelShort>
+        <labelPlural>medium hex-cells</labelPlural>
+        <description>A highly-advanced form of energy storage. This particular hex-cell variant is significantly larger and cumbersome, and is thus reserved for heavy-duty charge weaponry such as the heavy charge blaster.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Chocolate</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>6.5</MarketValue>
+            <Mass>0.35</Mass>
+        </statBases>
+    </SimpleAmmo.AmmoDef>
+
+    <RecipeDef ParentName="BaseAmmoRecipeSpacer">
+        <defName>Make_Ammo_HexCellMedium</defName>
+        <label>make medium hex-cells (x5)</label>
+        <description>Make 5 medium hex-cells.</description>
+        <jobString>Making medium hex-cells.</jobString>
+        <targetCountAdjustment>5</targetCountAdjustment>
+        <workAmount>2500</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_HexCellMedium>5</Ammo_HexCellMedium>
+        </products>
+    </RecipeDef>
+
+</Defs>

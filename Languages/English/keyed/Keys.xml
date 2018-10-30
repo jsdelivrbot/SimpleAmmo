@@ -1,0 +1,21 @@
+<LanguageData>
+
+    <Ammo>Ammo</Ammo>
+    <AmmoCapacity>Ammo capacity</AmmoCapacity>
+    <AmmoCapacity_Desc>How much ammunition the weapon can hold before needing to be reloaded.</AmmoCapacity_Desc>
+    <ReloadTime>Reload time</ReloadTime>
+    <ReloadTime_OneAtATime>{0} s per {1}</ReloadTime_OneAtATime> <!-- example: 0.6 s per bullet -->
+    <ReloadTime_Desc>How long it takes to reload this weapon.</ReloadTime_Desc>
+
+    <Reloading>Reloading</Reloading>
+
+    <ReloadCommand_Label>Reload</ReloadCommand_Label>
+    <ReloadCommand_Desc>Try to reload the equipped weapon.</ReloadCommand_Desc>
+
+    <UsedBy>Used by</UsedBy>
+    <ClickForDetails>Click for details</ClickForDetails>
+    <AmmoUserListReportTop>The following is a list of weapons that use this ammo:</AmmoUserListReportTop>
+
+    <FromHeldAmmo>From held ammo</FromHeldAmmo>
+
+</LanguageData>

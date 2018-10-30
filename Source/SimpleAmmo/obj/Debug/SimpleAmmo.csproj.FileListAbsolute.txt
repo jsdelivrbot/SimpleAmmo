@@ -1,0 +1,4 @@
+E:\Documents\My RimWorld Mods\SimpleAmmo\Assemblies\SimpleAmmo.dll
+E:\Documents\My RimWorld Mods\SimpleAmmo\Source\SimpleAmmo\obj\Debug\SimpleAmmo.csprojAssemblyReference.cache
+E:\Documents\My RimWorld Mods\SimpleAmmo\Source\SimpleAmmo\obj\Debug\SimpleAmmo.csproj.CoreCompileInputs.cache
+E:\Documents\My RimWorld Mods\SimpleAmmo\Source\SimpleAmmo\obj\Debug\SimpleAmmo.dll

@@ -1,0 +1,27 @@
+<Defs>
+
+    <ThingCategoryDef>
+        <defName>Ammo</defName>
+        <label>ammo</label>
+        <parent>Items</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>AmmoNeolithic</defName>
+        <label>neolithic</label>
+        <parent>Ammo</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>AmmoIndustrial</defName>
+        <label>industrial</label>
+        <parent>Ammo</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>AmmoSpacer</defName>
+        <label>spacer</label>
+        <parent>Ammo</parent>
+    </ThingCategoryDef>
+
+</Defs>

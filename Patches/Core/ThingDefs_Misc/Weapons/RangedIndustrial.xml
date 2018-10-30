@@ -1,0 +1,329 @@
+<Patch>
+
+    <!-- Revolver -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_Revolver"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_Revolver"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_Revolver"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_BulletPistolMedium</ammoDef>
+                <magazineCapacity>6</magazineCapacity>
+                <reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.6</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Autopistol -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_Autopistol"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_Autopistol"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_Autopistol"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_BulletPistolSmall</ammoDef>
+                <magazineCapacity>7</magazineCapacity>
+                <reloadTime>3</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Machine Pistol -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_MachinePistol"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_MachinePistol"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_MachinePistol"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_BulletPistolSmall</ammoDef>
+                <magazineCapacity>18</magazineCapacity>
+                <reloadTime>3</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Incendiary Launcher -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_IncendiaryLauncher"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_IncendiaryLauncher"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_IncendiaryLauncher"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_CellIncendiaryMedium</ammoDef>
+                <magazineCapacity>1</magazineCapacity>
+                <reloadTime>2.4</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Bolt-Action Rifle -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_BoltActionRifle"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_BoltActionRifle"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_BoltActionRifle"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_BulletRifleMedium</ammoDef>
+                <magazineCapacity>10</magazineCapacity>
+                <reloadTime>4</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Pump Shotgun -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_PumpShotgun"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_PumpShotgun"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_PumpShotgun"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_ShotgunShell</ammoDef>
+                <magazineCapacity>5</magazineCapacity>
+                <reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.7</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Chain Shotgun -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_ChainShotgun"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_ChainShotgun"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_ChainShotgun"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_ShotgunShell</ammoDef>
+                <magazineCapacity>12</magazineCapacity>
+                <reloadTime>4</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Heavy SMG -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_HeavySMG"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_HeavySMG"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_HeavySMG"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_BulletPistolMedium</ammoDef>
+                <magazineCapacity>24</magazineCapacity>
+                <reloadTime>3.5</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- LMG -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_LMG"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_LMG"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_LMG"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_BulletRifleMedium</ammoDef>
+                <magazineCapacity>60</magazineCapacity>
+                <reloadTime>6</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Assault Rifle -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_AssaultRifle"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_AssaultRifle"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_AssaultRifle"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_BulletRifleSmall</ammoDef>
+                <magazineCapacity>30</magazineCapacity>
+                <reloadTime>4</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Sniper Rifle -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_SniperRifle"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_SniperRifle"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_SniperRifle"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_BulletRifleMedium</ammoDef>
+                <magazineCapacity>5</magazineCapacity>
+                <reloadTime>4</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Minigun -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName="Gun_Minigun"]/comps</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>*/ThingDef[defName="Gun_Minigun"]</xpath>
+                <value>
+                    <comps/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Gun_Minigun"]/comps</xpath>
+        <value>
+            <li Class="SimpleAmmo.CompProperties_Ammo">
+                <ammoDef>Ammo_BulletRifleMedium</ammoDef>
+                <magazineCapacity>250</magazineCapacity>
+                <reloadTime>6</reloadTime>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

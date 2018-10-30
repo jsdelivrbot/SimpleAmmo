@@ -1,0 +1,10 @@
+<Defs>
+
+    <ThinkTreeDef>
+        <defName>OpportunisticReload</defName>
+        <insertTag>Humanlike_PreMain</insertTag>
+        <insertPriority>0</insertPriority>
+        <thinkRoot Class="SimpleAmmo.JobGiver_OpportunisticReload"/>
+    </ThinkTreeDef>
+
+</Defs>
