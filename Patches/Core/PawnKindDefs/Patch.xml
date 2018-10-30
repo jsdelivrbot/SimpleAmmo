@@ -1,0 +1,62 @@
+<Patch>
+
+    <!-- Tribal -->
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>*/PawnKindDef[defName="Tribal_Archer"]</xpath>
+        <value>
+            <li Class="SimpleAmmo.PawnKindDefExtension">
+                <weaponMagazineCount>
+                    <min>16</min>
+                    <max>24</max>
+                </weaponMagazineCount>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>*/PawnKindDef[defName="Tribal_Hunter"]</xpath>
+        <value>
+            <li Class="SimpleAmmo.PawnKindDefExtension">
+                <weaponMagazineCount>
+                    <min>16</min>
+                    <max>24</max>
+                </weaponMagazineCount>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>*/PawnKindDef[defName="Tribal_HeavyArcher"]</xpath>
+        <value>
+            <li Class="SimpleAmmo.PawnKindDefExtension">
+                <weaponMagazineCount>
+                    <min>16</min>
+                    <max>24</max>
+                </weaponMagazineCount>
+                <weaponMagazineCountSpecifics>
+                    <li>
+                        <key>Pila</key>
+                        <value>
+                            <min>6</min>
+                            <max>10</max>
+                        </value>
+                    </li>
+                </weaponMagazineCountSpecifics>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>*/PawnKindDef[defName="Tribal_ChiefRanged"]</xpath>
+        <value>
+            <li Class="SimpleAmmo.PawnKindDefExtension">
+                <weaponMagazineCount>
+                    <min>20</min>
+                    <max>28</max>
+                </weaponMagazineCount>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

@@ -44,6 +44,9 @@ namespace SimpleAmmo
         }
 
         public AmmoDef ammoDef;
+        public SoundDef soundReloadStart;
+        public SoundDef soundReload;
+        public SoundDef soundReloadEnd;
         public float ammoMultiplier = 1f;
         public int magazineCapacity = 1;
         public bool reloadOneAtATime = false;

@@ -15,5 +15,7 @@ namespace SimpleAmmo
 
         public IntRange weaponMagazineCount = IntRange.one;
 
+        public Dictionary<ThingDef, IntRange> weaponMagazineCountSpecifics;
+
     }
 }

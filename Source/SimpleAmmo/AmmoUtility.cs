@@ -72,7 +72,6 @@ namespace SimpleAmmo
         {
             if (ammoComp.CanReload && pawn.CanReloadWeapon(ammoComp))
             {
-                Log.Message(pawn.CurJob.ToStringSafe());
                 pawn.jobs.StartJob(new Job(SA_JobDefOf.ReloadHeldWeapons, pawn.equipment.Primary), JobCondition.InterruptForced,
                     resumeCurJobAfterwards: true, cancelBusyStances: false);
             }  
@@ -88,7 +87,8 @@ namespace SimpleAmmo
 
         public static void GiveAmmoIfNeeded(Pawn p)
         {
-            if (p.equipment?.Primary?.TryGetComp<CompAmmo>() is CompAmmo ammoComp)
+            ThingWithComps primary = p.equipment?.Primary;
+            if (primary?.TryGetComp<CompAmmo>() is CompAmmo ammoComp)
             {
                 // Doesn't require ammo things
                 if (ammoComp.Props.ammoDef == null)
@@ -99,7 +99,12 @@ namespace SimpleAmmo
                 PawnKindDefExtension extension = p.kindDef.GetModExtension<PawnKindDefExtension>() ?? PawnKindDefExtension.defaultValues;
                 ThingDef ammoDef = ammoProps.ammoDef;
                 float ammoMass = ammoDef.GetStatValueAbstract(StatDefOf.Mass);
-                int ammoCountToGenerate = GenMath.RoundRandom(ammoProps.magazineCapacity / ammoProps.ammoMultiplier * extension.weaponMagazineCount.RandomInRange);
+
+                // Determine which IntRange to use based on the ModExtension and the pawn's primary weapon
+                IntRange magCountRange = (extension.weaponMagazineCountSpecifics?.ContainsKey(primary.def) == true) ?
+                    extension.weaponMagazineCountSpecifics[primary.def] : extension.weaponMagazineCount;
+
+                int ammoCountToGenerate = GenMath.RoundRandom(ammoProps.magazineCapacity / ammoProps.ammoMultiplier * magCountRange.RandomInRange);
                 while (ammoCountToGenerate > 0)
                 {
                     Thing newAmmo = ThingMaker.MakeThing(ammoDef);

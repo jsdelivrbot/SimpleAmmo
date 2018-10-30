@@ -23,7 +23,7 @@
                 <ammoDef>Ammo_BulletPistolMedium</ammoDef>
                 <magazineCapacity>6</magazineCapacity>
                 <reloadOneAtATime>true</reloadOneAtATime>
-                <reloadTime>0.6</reloadTime>
+                <reloadTime>0.7</reloadTime>
             </li>
         </value>
     </Operation>
@@ -48,7 +48,7 @@
         <xpath>*/ThingDef[defName="Gun_Autopistol"]/comps</xpath>
         <value>
             <li Class="SimpleAmmo.CompProperties_Ammo">
-                <ammoDef>Ammo_BulletPistolSmall</ammoDef>
+                <ammoDef>Ammo_BulletPistolMedium</ammoDef>
                 <magazineCapacity>7</magazineCapacity>
                 <reloadTime>3</reloadTime>
             </li>
@@ -159,7 +159,7 @@
                 <ammoDef>Ammo_ShotgunShell</ammoDef>
                 <magazineCapacity>5</magazineCapacity>
                 <reloadOneAtATime>true</reloadOneAtATime>
-                <reloadTime>0.7</reloadTime>
+                <reloadTime>0.8</reloadTime>
             </li>
         </value>
     </Operation>
